@@ -128,7 +128,7 @@ section{padding-block:clamp(72px,9vw,120px)}
 @media (prefers-color-scheme:dark){.step .when{color:var(--sky)}}
 @media (prefers-reduced-motion:reduce){.step{opacity:1;transform:none}}
 @media (max-width:900px){.path .wrap{grid-template-columns:1fr}.path-head{position:static}}
-@media (max-width:520px){.step{grid-template-columns:1fr}.step img{width:100%;height:170px}}
+@media (max-width:520px){.step{grid-template-columns:1fr}.step img{width:100%;height:220px}}
 
 /* programs: bento, 4 items, 4 cells */
 .bento{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:300px 300px;gap:14px;margin-top:40px}
@@ -149,8 +149,8 @@ section{padding-block:clamp(72px,9vw,120px)}
 .islands .eyebrow{color:var(--sky)}
 .islands .lede{color:#AEBBD0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
-.island{border-radius:var(--r);overflow:hidden;background:#132C52;border:1px solid rgba(255,255,255,.08);display:grid;grid-template-rows:240px auto}
-.island img{width:100%;height:100%;object-fit:cover}
+.island{border-radius:var(--r);overflow:hidden;background:#132C52;border:1px solid rgba(255,255,255,.08)}
+.island img{width:100%;height:240px;object-fit:cover;object-position:50% 60%}
 .island .body{padding:26px 26px 28px}
 .island h3{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;font-variation-settings:"opsz" 60,"wdth" 92}
 .island .since{color:var(--sky);font-weight:600;font-size:.92rem;margin-top:2px}
@@ -305,7 +305,7 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;gap:16p
     <ol class="steps">
       <li class="step"><img src="img/intro-flight-teens.webp" alt="Two young passengers with headsets in the Cessna cockpit" loading="lazy"><div><h3>Introduction flight</h3><p>Sit in the right seat. Twenty minutes over the reef with one of our pilots. Share a flight with friends to keep it affordable.</p><span class="when">Any age, book by WhatsApp</span></div></li>
       <li class="step"><img src="img/groundschool.webp" alt="Info session at Jet Center Curaçao" loading="lazy"><div><h3>Info session</h3><p>Three hours at Jet Center Curaçao. When to start, where to study, what it costs. Bring your parents. You ask, we answer.</p><span class="when">A few times a year</span></div></li>
-      <li class="step"><img src="img/ansp-visit.webp" alt="Students visiting the air traffic control centre" loading="lazy"><div><h3>Ground school</h3><p>Evening classes with our members. Weather, navigation, radio, rules. We also visit the tower and the airlines.</p><span class="when">Starts after the info session</span></div></li>
+      <li class="step"><img src="img/ansp-visit.webp" alt="Students visiting the air traffic control centre" loading="lazy" style="object-position:50% 18%"><div><h3>Ground school</h3><p>Evening classes with our members. Weather, navigation, radio, rules. We also visit the tower and the airlines.</p><span class="when">Starts after the info session</span></div></li>
       <li class="step"><img src="img/student-flying.webp" alt="Student pilot at the controls over the coastline" loading="lazy"><div><h3>Fly with us</h3><p>Lessons in our own Cessna 152 and 172s, US-registered. Your first solo is a day you never forget.</p><span class="when">Solo from 16, licence from 17</span></div></li>
       <li class="step"><img src="img/ocala-seminar-2022.webp" alt="Falki members with the flight school from Ocala, Florida" loading="lazy"><div><h3>Study abroad, or stay</h3><p>Airline route: we connect you with schools in the USA and Europe we know. Recreational route: keep flying here with the club.</p><span class="when">Your call</span></div></li>
       <li class="step"><img src="img/ezair-pilots.webp" alt="Three EZ Air pilots who trained with Falki" loading="lazy"><div><h3>Fly home</h3><p>Our alumni fly for EZ Air and Divi Divi. Island kids in the left seat. The next one can be you.</p><span class="when">The goal</span></div></li>
@@ -346,7 +346,7 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;gap:16p
         </div>
       </div>
       <div class="island reveal">
-        <img src="img/wing-over-reef.webp" alt="View from under the wing over the reef and coastline" loading="lazy">
+        <img src="img/bonaire-flamingo-aerial.webp" alt="Flamingo Airport and the Kralendijk coastline from the Cessna" loading="lazy">
         <div class="body">
           <h3>Bonaire</h3>
           <div class="since">Falki Aviation Bonaire Foundation, 2015</div>
@@ -406,13 +406,13 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;gap:16p
   <div class="wrap">
     <div class="card reveal">
       <div class="left">
-        <span class="eyebrow"><i class="ph ph-calendar-check"></i>Next info session</span>
+        <span class="eyebrow"><i class="ph ph-calendar-check"></i>Info sessions</span>
         <h2 class="display">How to become a pilot?</h2>
         <p class="lede" style="color:#C9D3E3;margin-top:14px">Study options in the USA, Europe or Curaçao. When to start, where to start, what it costs. You bring the questions.</p>
         <div class="when">
-          <div><i class="ph-fill ph-calendar-blank"></i>Saturday 3 October 2026</div>
+          <div><i class="ph-fill ph-calendar-blank"></i>A few Saturdays a year, on both islands</div>
+          <div><i class="ph-fill ph-map-pin"></i>Jet Center, Curaçao and Dabboussi Center, Bonaire</div>
           <div><i class="ph-fill ph-clock"></i>09:00 to 12:00</div>
-          <div><i class="ph-fill ph-map-pin"></i>Jet Center, Curaçao</div>
           <div><i class="ph-fill ph-ticket"></i>Free. Parents welcome.</div>
         </div>
       </div>
@@ -420,8 +420,8 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;gap:16p
         <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="First and last name" required></div>
         <div class="field"><label for="island">Island</label><select id="island" name="island"><option>Curaçao</option><option>Bonaire</option><option>Aruba or elsewhere</option></select></div>
         <div class="field"><label for="age">Age</label><input id="age" name="age" type="number" inputmode="numeric" min="8" max="99" placeholder="For example 16"><small>Under 16 is fine. The Kids Program starts at 8.</small></div>
-        <button class="btn btn-accent" type="submit"><i class="ph-fill ph-whatsapp-logo"></i>Reserve a seat on WhatsApp</button>
-        <p class="alt">Prefer email? <a href="mailto:info@falkiaviation.com?subject=Info%20session%203%20October">info@falkiaviation.com</a></p>
+        <button class="btn btn-accent" type="submit"><i class="ph-fill ph-whatsapp-logo"></i>Save me a seat at the next one</button>
+        <p class="alt">We message you the date. Prefer email? <a href="mailto:info@falkiaviation.com?subject=Next%20info%20session">info@falkiaviation.com</a></p>
       </form>
     </div>
   </div>
@@ -476,7 +476,7 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;gap:16p
     e.preventDefault();
     const f = e.target, name = f.name.value.trim(), island = f.island.value, age = f.age.value.trim();
     if (!name) { f.name.focus(); f.name.setAttribute('aria-invalid', 'true'); return; }
-    const txt = `Hi Falki, I would like to reserve a seat for the info session on 3 October. Name: ${name}. Island: ${island}.${age ? ' Age: ' + age + '.' : ''}`;
+    const txt = `Hi Falki, I would like a seat at the next info session. Name: ${name}. Island: ${island}.${age ? ' Age: ' + age + '.' : ''}`;
     window.open('https://wa.me/59995262819?text=' + encodeURIComponent(txt), '_blank', 'noopener');
   });
 })();
